@@ -1,0 +1,259 @@
+/* Eléments principaux de la page */
+
+body
+{
+    background-color: black;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    background: repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 2rem auto 1rem;
+    line-height: 1;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+	text-align: right;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/* Meilleur film */
+
+.item__img {
+    margin: 50px;
+    width: 200px;
+    height: 400px;
+    border: white;
+  }
+  
+  .item__body {
+    width: 200px;
+    height: 250px;
+    padding: 25px;
+    border: white;
+  }
+  
+  .item__title {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .item__description {
+    width: 200px;
+    height: 250px;
+    overflow: scroll;
+    margin-left: 5px;
+    color:white;
+  }
+  
+  .items {
+    position: relative;
+  }
+
+#best_movie
+{   
+	margin-top: 15px;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#meilleur_film
+{
+	margin: 50px;
+    width: 200px;
+    height: 400px;
+    border: white;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    transition: 0.25s all ease-in-out;
+}
+
+a:visited {
+    color: #3d4852;
+}
+
+a:hover,
+a:focus,
+a:active {
+    background-color: #3d4852;
+    color: white;
+}
+
+a:focus {
+    outline: thin solid #3d4852;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a.button {
+    align-items: center;
+    background: url('images/.bouton_rouge.png') repeat-x;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: #58636F;
+    box-shadow: 0 0 2px 2px #bac6d3;
+}
+
+a.button:focus {
+    outline: 1px solid #3d4852;
+}
+
+a.button:visited {
+    color: #fff;
+}
+
+/* section catégories */
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+svg {
+    fill: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+img {
+    height: auto;
+    margin-bottom: .5rem;
+    max-width: calc(100% + 2rem);
+    position: relative;
+    left: -1rem;
+    right: -1rem;
+}
+
+p {
+    width: 200px;
+    height: 250px;
+    overflow: scroll;
+    margin-left: 5px;
+    color: white
+}
+
+main {
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Carouseul JS */
+
+.carousel {
+    position: relative;
+}
+
+.carousel__container {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0)
+}
+
+.carousel__container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.carousel__item {
+    float: left;
+}
+
+.carousel__next, .carousel__prev {
+    width: 40px;
+    height: 40px;
+    background-color: white url(image/fleche_droite.png) center center no-repeat;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    right: -20px;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.carousel__next, .carousel__prev {
+    transform: scale(1.2);
+}
+
+.carousel__prev {
+    background-image: url(image/fleche_gauche.png);
+    right: auto;
+    left: -20px;
+}
+
+.carousel__prev--hidden, .carousel__next--hidden {
+    opacity: 0;
+}
+
