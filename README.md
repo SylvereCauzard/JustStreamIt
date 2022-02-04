@@ -1,11 +1,5 @@
 JustStreamIt write with HTML, CSS and JavaScript
 
-    • Gitbash
-    
-    • Installation 
-    
-    • Preview 
-    
 This program allows you to 🠋
 
     • Consult the best films of four different categories resulting from a API database. 
@@ -22,7 +16,7 @@ git clone https://github.com/SylvereCauzard/JustStreamIt.git
 
 Installation
 
-    • Follow the instructions for installing the API in local version on this link API_OC_MOVIE 
+    • Follow the instructions for installing the API in local version on this link https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR 
     
     • Launch the API server 
     
