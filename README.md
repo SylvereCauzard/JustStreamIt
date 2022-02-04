@@ -20,4 +20,4 @@ Installation
     
     • Launch the API server 
     
-    • When the API is launched, go to the root of the JusStreamIt repository and launch the file named index.html. 
+    • When the API is launched, go to the root of the JusStreamIt repository and launch the file named films.html. 
